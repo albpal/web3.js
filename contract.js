@@ -17,8 +17,8 @@ function Contract(address) {
 		filters = filter.split(",");
 		for (var i = 0; i < filters.length; ++i) {
 			var atomic_filter = filters[i];
-			key = atomic_filter.split("=")[0].trim().toLowerCase();
-			value = atomic_filter.split("=")[1].trim().toLowerCase();
+			var key = atomic_filter.split("=")[0].trim().toLowerCase();
+			var value = atomic_filter.split("=")[1].trim().toLowerCase();
 			if (!(key in this.properties)) {
 				return false;
 			}
