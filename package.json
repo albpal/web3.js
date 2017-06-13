@@ -1,0 +1,26 @@
+{
+  "name": "web3j",
+  "version": "1.0.0",
+  "description": "web3.js application",
+  "main": "index.js",
+  "scripts": {
+    "test": "jenkins-mocha test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albpal/web3j.git"
+  },
+  "author": "Albert Palau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albpal/web3j/issues"
+  },
+  "homepage": "https://github.com/albpal/web3j#readme",
+  "dependencies": {
+    "web3": "^0.19.0"
+  },
+  "devDependencies": {
+    "jenkins-mocha": "^4.1.2",
+    "mocha": "^3.4.2"
+  }
+}
