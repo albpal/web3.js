@@ -1,4 +1,4 @@
-function contractBag() {
+function contractRepository() {
 	this.contracts = [];
 	this.addContract = function (contract) {
 		this.contracts[contract.getAddress()] = contract;
@@ -19,4 +19,4 @@ function contractBag() {
 	}
 }
 
-module.exports = contractBag
+module.exports = contractRepository

@@ -1,7 +1,7 @@
-function searchEngine(contractBag) {
-	this.contractBag = contractBag;
+function searchEngine(contractRepository) {
+	this.contractRepository = contractRepository;
 	this.getAllContractsFromFilter = function(filter) {
-		return contractBag.getAllContractsFromFilter(filter);
+		return contractRepository.getAllContractsFromFilter(filter);
 	}
 }
 
