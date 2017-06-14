@@ -15,6 +15,7 @@ describe("Contract unitary testing...", function() {
 		contract1.addProperties(filter);
     assert.ok(contract1.pass(filter) , 'The contract has to pass the filter');
     assert.ok(!(contract1.pass("type=temperature, location=madrid")), 'The contract has not to pass the filter');
+		assert.ok(!(contract1.pass("type=temperature, sex=madrid")), 'The contract has not to pass the filter');
 	});
 	it('Testing addProperties function...', function () {
 		var contract1 = new Contract('0xD3a33636677fFF0BE34EC503b9E848b296E0972B');
