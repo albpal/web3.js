@@ -1,5 +1,5 @@
 var Contract = require('../contract');
-var contractRepository = require('../contractRepository');
+var ContractRepository = require('../contractRepository');
 var assert = require('assert');
 
 describe("ContractRepository unitary testing...", function() {
