@@ -6,4 +6,3 @@ function searchEngine(contractBag) {
 }
 
 module.exports = searchEngine
-

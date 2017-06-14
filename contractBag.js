@@ -1,13 +1,16 @@
 function contractBag() {
-	this.contracts = []
+	this.contracts = [];
 	this.addContract = function (contract) {
-		this.contracts.push(contract);
+		this.contracts[contract.getAddress()] = contract;
+	}
+	this.getContract = function (contract_address) {
+		return this.contracts[contract_address];
 	}
 
 	this.getAllContractsFromFilter = function (filter) {
 		var candidates = [];
-		for (var i = 0; i < this.contracts.length; ++i) {
-			var c = this.contracts[i];
+		for (c in this.contracts) {
+			var c = this.contracts[c];
 			if (c.pass(filter)) {
 				candidates.push(c);
 			}

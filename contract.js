@@ -13,6 +13,9 @@ function Contract(address) {
 			this.properties[key] = value;
 		}
 	};
+	this.getProperties = function() {
+		return this.properties;
+	}
 	this.pass = function(filter) {
 		filters = filter.split(",");
 		for (var i = 0; i < filters.length; ++i) {
@@ -31,5 +34,3 @@ function Contract(address) {
 }
 
 module.exports = Contract
-
-
